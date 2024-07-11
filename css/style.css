@@ -1,0 +1,542 @@
+:root {
+  --color_titles: rgb(244, 224, 198);
+  --color_line_border: rgb(234, 196, 145);
+  --colorborder_background: rgb(243, 197, 81);
+  --color_hover: rgb(240, 183, 40);
+  --color_order: rgb(248, 227, 106);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("https://media.istockphoto.com/id/960924058/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%87%D0%B0%D1%88%D0%BA%D0%B0-%D0%BA%D0%BE%D1%84%D0%B5-%D0%BA%D0%B0%D0%BF%D1%83%D1%87%D0%B8%D0%BD%D0%BE-%D1%81-%D0%BA%D1%80%D1%83%D0%B0%D1%81%D1%81%D0%B0%D0%BD%D0%B0%D0%BC%D0%B8.jpg?s=2048x2048&w=is&k=20&c=7iXOtTIKPcTfqdw_NA0C9Wt6QV0TKPSYsh3BaHpFO9w=");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 6390px;
+}
+
+header {
+  border-bottom: 1px solid var(--color_line_border);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+img.marker,
+img.phone {
+  height: 30px;
+  width: 30px;
+}
+
+section.container_header {
+  display: flex;
+  width: 1301px;
+  margin: 0 auto;
+}
+
+div.title_header,
+div.contacts {
+  display: flex;
+  align-items: center;
+  width: 650px;
+  color: var(--color_titles);
+}
+
+div.contacts {
+  justify-content: space-around;
+}
+
+div.contact_left,
+div.contact_right {
+  display: flex;
+  justify-content: right;
+  padding-top: 30px;
+}
+
+span.address_city_street,
+span.contact_number_mode_work {
+  display: block;
+  line-height: 21px;
+  margin-bottom: 25px;
+}
+
+span.address_city_street {
+  width: 150px;
+}
+
+span.contact_number_mode_work {
+  width: 200px;
+}
+
+section.container_advertising {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  width: 400px;
+  height: 400px;
+  z-index: 1;
+}
+
+aside.advertising {
+  position: relative;
+}
+
+button.btn-advertising_top,
+span.text_advertising,
+p.delivery,
+div.box_link_catalog_description {
+  position: absolute;
+}
+
+button.btn-advertising_top,
+button.btn-advertising_second,
+button.btn-advertising_confectioner {
+  width: 100px;
+  height: 30px;
+  margin-bottom: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  color: rgb(77, 75, 75);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 11pt;
+}
+
+span.text_advertising,
+span.title_advertising-second,
+span.title_advertising-confectioner {
+  top: 60px;
+  font-size: 25pt;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+p.delivery {
+  top: 210px;
+  font-size: 15pt;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+div.box_link_catalog_description {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  top: 300px;
+}
+
+button.btn-advertising_bottom {
+  width: 200px;
+  height: 70px;
+  border: 1px solid var(--colorborder_background);
+  border-radius: 10px;
+  background-color: var(--colorborder_background);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14pt;
+}
+
+button.btn-advertising_bottom:hover {
+  cursor: pointer;
+  transition: ease-in 0.3s;
+  background-color: var(--color_hover);
+}
+
+button.btn-advertising_bottom:not(:hover) {
+  cursor: pointer;
+  transition: ease-in 0.3s;
+  background-color: var(--colorborder_background);
+}
+
+p.description_catalog {
+  width: 120px;
+  font-size: 10pt;
+  padding-left: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+section.container-menu {
+  position: absolute;
+  top: 800px;
+  left: 151px;
+  width: 1200px;
+  height: 400px;
+  z-index: 1;
+}
+
+h2.title_menu {
+  text-align: center;
+  color: whitesmoke;
+}
+
+div.box_title {
+  padding: 21px;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  width: 600px;
+  margin: 0 auto;
+  backdrop-filter: blur(5px);
+}
+
+div.box_menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 450px);
+  gap: 10px;
+  border-radius: 10px;
+  width: 1200px;
+  height: auto;
+  margin-top: 33px;
+}
+
+div.item {
+  border: 1px solid rgb(236, 232, 232);
+  border-radius: 11px;
+  background-color: whitesmoke;
+  box-shadow: 0 0 11px rgb(134, 132, 132);
+}
+
+div.item:hover {
+  transition: ease-in 0.3s;
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+div.item:not(:hover) {
+  transition: ease-in 0.3s;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+img.cake-menu {
+  width: 391px;
+  height: 210px;
+  border-radius: 10px;
+}
+
+div.image_cake_desc {
+  margin-left: 24px;
+  margin-top: 19px;
+  width: 300px;
+  height: 205px;
+}
+
+span.cake_title {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 19pt;
+  font-weight: bold;
+}
+
+p.description_cake {
+  font-size: 11pt;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: gray;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+span.price_cake {
+  font-size: 14pt;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button.btn-order {
+  height: 51px;
+  width: 101px;
+  background-color: var(--color_order);
+  border: 1px solid var(--color_order);
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+button.btn-order:hover {
+  cursor: pointer;
+  transition: ease-in 0.3s;
+  background-color: var(--color_hover);
+}
+
+button.btn-order:not(:hover) {
+  cursor: pointer;
+  transition: ease-in 0.3s;
+  background-color: var(--color_order);
+}
+
+section.container_advertising_second {
+  position: absolute;
+  top: 2500px;
+  right: 163px;
+  width: 900px;
+}
+
+aside.box_advertising_second {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.container_advertising-text {
+  display: block;
+  height: auto;
+  width: 400px;
+}
+
+img.phone_advertising_second-img,
+img.girl {
+  border-radius: 100px;
+}
+
+button.btn-advertising_second {
+  width: 200px;
+  height: 30px;
+  font-size: 10pt;
+}
+
+span.title_advertising-second {
+  color: rgb(75, 54, 28);
+}
+
+p.description_advertising_second {
+  padding-top: 20px;
+  font-size: 12pt;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(75, 54, 28);
+}
+
+button.loading_photo,
+button.ask_confectioner {
+  width: 200px;
+  height: 70px;
+  border: 1px solid var(--colorborder_background);
+  border-radius: 10px;
+  margin-top: 40px;
+  background-color: var(--colorborder_background);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14pt;
+}
+
+button.loading_photo:hover,
+button.ask_confectioner:hover {
+  cursor: pointer;
+  transition: ease-in 0.3s;
+  background-color: var(--color_hover);
+}
+
+button.loading_photo:not(:hover),
+button.ask_confectioner:not(:hover) {
+  cursor: pointer;
+  transition: ease-in 0.3s;
+  background-color: var(--colorborder_background);
+}
+
+section.slider,
+span.title_slider,
+section.container_really_orders,
+form.form_phone_number {
+  position: absolute;
+  top: 3300px;
+  right: 163px;
+  width: auto;
+  height: auto;
+}
+
+aside.box_confectioner {
+  display: flex;
+  margin-top: 250px;
+  justify-content: space-around;
+  width: 1000px;
+  height: auto;
+}
+
+button.btn-advertising_confectioner {
+  width: 200px;
+}
+
+span.title_advertising-confectioner {
+  display: block;
+  padding-top: 30px;
+  width: 310px;
+  color: rgb(75, 54, 28);
+}
+
+ul.list_services {
+  width: 310px;
+}
+
+li.services {
+  margin-top: 30px;
+  color: rgb(94, 186, 243);
+}
+
+span.item-service {
+  color: white;
+}
+
+section.slider {
+  left: 470px;
+  top: 4100px;
+}
+
+img.cupkake_slider {
+  border-radius: 16px;
+  width: 250px;
+  height: 250px;
+}
+
+div.brand-list {
+  width: 520px;
+  overflow: hidden;
+}
+div.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 2520px;
+  animation: scroll 30s linear infinite;
+}
+@keyframes scroll {
+  to {
+    translate: calc(-4 * 300px);
+  }
+}
+
+span.title_slider {
+  top: 3990px;
+  left: 330px;
+  color: rgb(75, 54, 28);
+  font-weight: bold;
+  font-size: 25pt;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+section.container_really_orders {
+  width: auto;
+  top: 4600px;
+  text-align: center;
+}
+
+article.box-really_orders {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+div.box_order_img {
+  overflow: hidden;
+}
+
+div.box_order_img,
+img.order_img {
+  width: 400px;
+  height: 400px;
+}
+
+img.order_img:hover {
+  transition: 0.3s;
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+img.order_img:not(:hover) {
+  transition: 0.3s;
+  transform: scale(1);
+}
+
+h2.title-really_orders,
+h3.description_photo_orders {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2.title-really_orders {
+  padding-bottom: 15px;
+}
+
+h3.description_photo_orders {
+  padding-bottom: 51px;
+}
+
+form.form_phone_number {
+  width: 900px;
+  height: 300px;
+  top: 6060px;
+  bottom: 100px;
+  left: 300px;
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+h2.instructions,
+h3.clarification {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h2.instructions {
+  padding-top: 30px;
+  font-weight: bold;
+}
+
+h3.clarification {
+  padding-top: 21px;
+}
+
+div.info_order_button {
+  margin: 0 auto;
+  margin-top: 36px;
+  width: 700px;
+  display: flex;
+  justify-content: space-around;
+}
+
+input.phone_number_field,
+button.do_orders {
+  border-radius: 11px;
+}
+
+input.phone_number_field {
+  width: 300px;
+  height: 51px;
+  padding: 15px;
+  border: none;
+  background-color: rgb(241, 235, 235);
+}
+
+button.do_orders {
+  width: 330px;
+  height: 81px;
+  background-color: var(--color_order);
+  font-size: 14pt;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+button.do_orders:hover {
+  cursor: pointer;
+  transition: 0.6s;
+  background-color: var(--color_hover);
+}
+
+button.do_orders:not(:hover) {
+  cursor: pointer;
+  transition: 0.6s;
+  background-color: var(--color_order);
+}
+
+label.conditions {
+  padding-top: 30px;
+}
+
+div.box-conditions {
+  margin-top: 23px;
+}
